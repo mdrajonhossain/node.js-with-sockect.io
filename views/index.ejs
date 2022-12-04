@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sadf</title>
+</head>
+<body>
+
+test
+
+
+
+<h2><%= name %></h2>
+
+<script src="http://localhost:3000/socket.io/socket.io.js"></script>
+<script type="text/javascript">
+	 var socketIO = io("http://localhost:3000");
+
+    socketIO.on("send", function (data) {
+    	console.log(data);
+    })
+
+    
+    
+</script>
+
+
+</body>
+</html>
